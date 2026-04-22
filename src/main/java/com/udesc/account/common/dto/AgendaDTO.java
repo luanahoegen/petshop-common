@@ -13,8 +13,7 @@ public class AgendaDTO {
     private TipoServico tipoServico;
     private StatusAgendamento status;
 
-    public AgendaDTO() {
-    }
+    public AgendaDTO() {}
 
     public AgendaDTO(Long id, LocalDateTime dataHora, String descricao, Long animalId, TipoServico tipoServico, StatusAgendamento status) {
         this.id = id;
