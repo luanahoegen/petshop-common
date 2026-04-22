@@ -1,6 +1,5 @@
 package com.udesc.account.common.dto;
 
-import com.udesc.account.common.entity.ClienteEntity;
 import com.udesc.account.common.enumeration.AnimalEspecie;
 
 public class AnimalDTO {
@@ -9,17 +8,17 @@ public class AnimalDTO {
     private String nome;
     private AnimalEspecie especie;
     private long idade;
-    private ClienteEntity cliente;
+    private Long clienteId;
 
     public AnimalDTO() {
     }
 
-    public AnimalDTO(Long id, String nome, AnimalEspecie especie, long idade, ClienteEntity cliente) {
+    public AnimalDTO(Long id, String nome, AnimalEspecie especie, long idade, Long clienteId) {
         this.id = id;
         this.nome = nome;
         this.especie = especie;
         this.idade = idade;
-        this.cliente = cliente;
+        this.clienteId = clienteId;
     }
 
     public Long getId() {
@@ -54,11 +53,11 @@ public class AnimalDTO {
         this.idade = idade;
     }
 
-    public ClienteEntity getCliente() {
-        return cliente;
+    public Long getClienteId() {
+        return clienteId;
     }
 
-    public void setCliente(ClienteEntity cliente) {
-        this.cliente = cliente;
+    public void setClienteId(Long clienteId) {
+        this.clienteId = clienteId;
     }
 }

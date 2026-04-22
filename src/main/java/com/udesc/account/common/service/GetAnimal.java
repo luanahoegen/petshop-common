@@ -31,7 +31,7 @@ public class GetAnimal {
                 animal.getNome(),
                 animal.getEspecie(),
                 animal.getIdade(),
-                animal.getCliente()
+                animal.getCliente().getId()
         );
     }
 }

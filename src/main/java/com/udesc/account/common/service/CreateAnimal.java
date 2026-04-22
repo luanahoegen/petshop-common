@@ -37,7 +37,7 @@ public class CreateAnimal {
         
         animalRepository.persistAndFlush(animal);
         
-        return new AnimalDTO(animal.getId(), animal.getNome(), animal.getEspecie(), animal.getIdade(), cliente);
+        return new AnimalDTO(animal.getId(), animal.getNome(), animal.getEspecie(), animal.getIdade(), cliente.getId());
     }
 
     private void validateRequest(CreateAnimalRequest request) {
